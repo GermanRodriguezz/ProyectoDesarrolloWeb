@@ -1,0 +1,320 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Roboto:wght@400&display=swap');
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* HEADER */
+
+.header {
+    background-color: rgb(233, 51, 51);
+    color: white;
+    text-align: center;
+    position : sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+/* --------------NAV------------- */
+.nav-bar {
+    background-color: rgb(233, 51, 51);
+    color: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+
+.nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.nav-bar ul a {
+    text-decoration: none;
+    color: black;
+    padding: 10px 15px;
+}
+
+.nav-bar h1{
+    margin-left: 20px;
+    font-size: 24px;
+}
+
+.nav-bar img {
+    margin : 5px;
+    padding: 10px;
+    border-radius: 20%
+}
+
+/* ----------MAIN------------- */
+
+.main-content {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content img {
+    width: auto;
+    height: auto;
+    margin: 20px;
+    max-width: 100%;
+    max-height: 200px;
+    display: inline-block;
+}
+
+.main-content p {
+    margin: 10px 0;
+}
+
+section h2 {
+    margin: 20px 0;
+    color: #333;
+}
+
+
+/* ---------PRODUCTOS-------------- */
+
+.productos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    background-color: rgb(66, 127, 232);
+}
+
+.productos img {
+    width: 100%;
+    max-width: 300px;;
+    height: 200px;
+    object-fit: cover;
+    margin: 10px;
+    border-radius: 10px;}
+
+.productos h2 {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+    color: #f7f3f3;
+    text-decoration: underline;
+}
+
+.productos div {
+    text-align: center;
+    margin: 10px;
+    flex: 1 1 calc(25% - 20px); /* 4 items per row with some margin */
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+/* ------BIENVENIDA------- */  
+
+main .bienvenida {
+    display:  flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    width: 100%;
+    height: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.bienvenida div {
+    flex: 1;
+}
+
+.bienvenida h2, .bienvenida p {
+    margin : 0 0 10px;
+}
+
+main .bienvenida p {
+    font-size: 18px;
+    color: #555;
+}
+
+.historia {
+    text-align: left;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: tomato
+}
+
+.boton-pedido {
+    background-color: #e63946;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.text-princ {
+    text-align: left;
+}
+
+/* ------MENU-------- */
+
+.menu h2 {
+    padding: 20px;
+    text-align: center;
+    color: #333;
+}
+
+.burguer-items {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border : 1px solid #ddd;
+}
+
+.burguer-items img {
+    width: 180px;
+    height: 180px;
+    border-radius: 10px;
+}
+
+.producto-info {
+    display: flex;
+    align-items: center;
+}
+
+.precio {
+    font-size: 25px;
+    color: white;
+    margin-left: 50px;
+}
+
+.boton-precio {
+    display: flex;
+    margin-left: 20px;
+    padding: 10px 20px;
+    border: none;
+    background-color: rgb(233, 51, 51);
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* CONOCENOS / HISTORIA */
+
+.conocenos {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+
+/* IMAGEN DIVISORA */
+.imagen-divider {
+    background-image: url('../img/americana2.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 60vh;
+    width: 100%;
+    position: relative;
+    margin: 10px 20px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 24px;
+}
+
+/* PROMOCIONES */
+
+.promociones {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.promociones h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.promociones h3 {
+    margin: 10px 0;
+    color: #555;
+}
+
+.promociones p {
+    margin: 5px 0;
+    color: #777;
+}
+
+/* tiene que estar uno al lado del otro */
+.promociones form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* CONTACTO*/
+
+main section {
+    text-align: center;
+}
+
+/* FOOTER */
+.footer {
+    background-color: rgb(233, 51, 51);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* PAGINA CONOCENOS */
+
+.sobre-nosotros {
+    background-color: #dfe7f3;
+    padding: 20px;
+}
+
+.texto-princ-conoc {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
