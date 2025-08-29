@@ -183,12 +183,72 @@ section h2 {
     text-align: left;
 }
 
+/* NUESTROS PRODUCTOS */
+
+.productos {
+    margin: 20px;
+    padding: 20px;
+}
+
+.productos h2{
+    font-size: 30px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: black;
+    padding: 10px;
+}
+
+.producto-info {
+    display: flex;
+    align-items: center;
+}
+
+.productos img {
+    background-color: tomato;
+    border-radius: 10px;
+    margin-right: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.productos h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.productos p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 10px;
+}
+
+.productos h3, .productos p {
+    flex: 1;
+}
+
+.productos h3 {
+    font-weight: bold;
+    margin: 10px;
+}
+
 /* ------MENU-------- */
 
 .menu h2 {
     padding: 20px;
     text-align: center;
     color: #333;
+}
+
+.menu h3 {
+    margin: 10px 0;
+    color: #555;
+}
+
+.menu p {
+    margin: 5px 0;
+    color: black;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
 }
 
 .burguer-items {
@@ -208,11 +268,6 @@ section h2 {
     border-radius: 10px;
 }
 
-.producto-info {
-    display: flex;
-    align-items: center;
-}
-
 .precio {
     font-size: 25px;
     color: white;
@@ -230,6 +285,18 @@ section h2 {
     cursor: pointer;
 }
 
+.producto-info {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
 /* CONOCENOS / HISTORIA */
 
 .conocenos {
@@ -239,9 +306,13 @@ section h2 {
     padding: 20px;
 }
 
+.conocenos h2 {
+    font-size: 25px;
+    margin-top: 10px;
+}
 
 /* IMAGEN DIVISORA */
-.imagen-divider {
+.imagen-divider1 {
     background-image: url('../img/americana2.jpg');
     background-size: cover;
     background-position: center;
@@ -258,9 +329,22 @@ section h2 {
     font-size: 24px;
 }
 
-.conocenos h2 {
-    font-size: 25px;
+.imagen-divider2 {
+    background-image: url('../img/imgoff/americana2-removebg-preview.png');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 50vh;
+    width: 100%;
+    margin: 10px 20px;
+    padding-left: 15px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
 }
+
 
 /* PROMOCIONES */
 
