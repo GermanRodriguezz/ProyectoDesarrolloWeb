@@ -20,7 +20,7 @@ body {
 /* HEADER */
 
 .header {
-    background-color: rgb(233, 51, 51);
+    background-color: rgb(255, 255, 255);
     color: white;
     text-align: center;
     position : sticky;
@@ -31,7 +31,7 @@ body {
 
 /* --------------NAV------------- */
 .nav-bar {
-    background-color: rgb(233, 51, 51);
+    background-color: rgb(255, 255, 255);
     color: black;
     display: flex;
     justify-content: space-between;
@@ -51,7 +51,7 @@ body {
 .nav-bar ul a {
     text-decoration: none;
     color: black;
-    padding: 10px 15px;
+    padding: 10px;
 }
 
 .nav-bar h1{
@@ -59,28 +59,20 @@ body {
     font-size: 24px;
 }
 
-.nav-bar img {
+.logo {
     margin : 5px;
     padding: 10px;
     border-radius: 20%;
-    background-color: white;
+    height : 110px;
 }
+
+
 
 /* ----------MAIN------------- */
 
 .main-content {
     padding: 20px;
     display: flex;
-    flex-direction: column;
-}
-
-.main-content img {
-    width: auto;
-    height: auto;
-    margin: 20px;
-    max-width: 100%;
-    max-height: 200px;
-    display: inline-block;
 }
 
 .main-content p {
@@ -136,7 +128,7 @@ section h2 {
 
 /* ------BIENVENIDA------- */  
 
-.main-content .bienvenida {
+.bienvenida {
     display:  flex;
     justify-content: space-between;
     align-items: center;
@@ -155,7 +147,7 @@ section h2 {
     margin : 0 0 10px;
 }
 
-.main-content .bienvenida p {
+.bienvenida p {
     font-size: 18px;
     color: #555;
 }
@@ -179,56 +171,18 @@ section h2 {
     transition: 0.3s;
 }
 
+.boton-pedido a {
+    text-decoration: none;
+    color: #ddd;
+}
+
 .text-princ {
     text-align: left;
 }
 
-/* NUESTROS PRODUCTOS */
-
-.productos {
-    margin: 20px;
-    padding: 20px;
-}
-
-.productos h2{
-    font-size: 30px;
-    text-decoration: none;
-    font-family: 'Montserrat', sans-serif;
-    color: black;
-    padding: 10px;
-}
-
-.producto-info {
-    display: flex;
-    align-items: center;
-}
-
-.productos img {
-    background-color: tomato;
-    border-radius: 10px;
-    margin-right: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.productos h3 {
-    font-size: 22px;
-    margin-bottom: 10px;
-    color: #333;
-}
-
-.productos p {
-    font-size: 16px;
-    color: #666;
-    margin-bottom: 10px;
-}
-
-.productos h3, .productos p {
-    flex: 1;
-}
-
-.productos h3 {
-    font-weight: bold;
-    margin: 10px;
+.historia {
+    font-size: 17px;
+    font-family: 'Roboto', sans-serif;
 }
 
 /* ------MENU-------- */
@@ -313,21 +267,19 @@ section h2 {
 
 /* IMAGEN DIVISORA */
 .imagen-divider1 {
-    background-image: url('../img/americana2.jpg');
+    background-image: url('../img/imgoff/americana2-removebg-preview.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
     height: 60vh;
     width: 100%;
     position: relative;
-    margin: 10px 20px;
     border-radius: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
     color: white;
-    font-size: 24px;
-}
+    font-size: 24px;}
 
 .imagen-divider2 {
     background-image: url('../img/imgoff/americana2-removebg-preview.png');
@@ -336,8 +288,6 @@ section h2 {
     background-attachment: fixed;
     height: 50vh;
     width: 100%;
-    margin: 10px 20px;
-    padding-left: 15px;
     border-radius: 10px;
     display: flex;
     align-items: center;
@@ -345,6 +295,48 @@ section h2 {
     color: white;
 }
 
+/* NUESTROS PRODUCTOS */
+
+.nuestros-prod {
+    text-align: center;
+}
+
+.nuestros-prod h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.contenedor-tarjeta {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tarjeta-container {
+    background-color: #777;
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: center;
+    transition: transform 0.2s ease;
+}
+
+.tarjeta-container img {
+    display: block;
+    margin: 0;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    object-fit: cover;
+}
+
+.tarjeta-container p {
+    font-size: 14px;
+    color: #444;
+}
 
 /* PROMOCIONES */
 
