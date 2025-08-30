@@ -130,17 +130,13 @@ section h2 {
 
 .bienvenida {
     display:  flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     text-align: left;
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
     padding: 20px;
-}
-
-.bienvenida div {
-    flex: 1;
 }
 
 .bienvenida h2, .bienvenida p {
@@ -150,6 +146,16 @@ section h2 {
 .bienvenida p {
     font-size: 18px;
     color: #555;
+}
+
+.bienvenida .img-boton img {
+    width: 450px;
+    height: 400px;
+}
+
+.bienvenida .img-boton {
+    display: flex;
+    align-items: center;
 }
 
 .historia {
@@ -299,6 +305,7 @@ section h2 {
 
 .nuestros-prod {
     text-align: center;
+    display: flex;
 }
 
 .nuestros-prod h2{
@@ -308,10 +315,10 @@ section h2 {
 
 .contenedor-tarjeta {
     width: 100%;
+    justify-content: space-around;
+    gap: 20px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
 }
 
 .tarjeta-container {
@@ -325,7 +332,6 @@ section h2 {
 }
 
 .tarjeta-container img {
-    display: block;
     margin: 0;
     width: 100%;
     height: auto;
