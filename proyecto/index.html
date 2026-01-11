@@ -20,7 +20,12 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <main class="main">
+        <section class="page-header">
+            <h2>Hamburguesas artesanales</h2>
+            <p>Ingredientes frescos, recetas únicas y el mejor sabor de la ciudad</p>
+            <p>Pedí online o retiralo en el local</p>
+        </section>
         <section class="bienvenida">
             <div class="texto-princ">
             <h2>Conocenos...</h2>
@@ -134,23 +139,14 @@
         </section>
         <section class="promociones">
             <h2>OBTENER BENEFICIOS</h2>
-                <h3>ENTERATE DE NUESTRAS PROMOCIONES REGISTRANDOTE POR ACA</h3>
-                <!-- este formulario tiene que tener cada casillero uno al lado del otro -->
-            <div class="formulario">
-                <form action="/submit" method="post">
-                    <label for="name">Nombre:</label>
-                    <input type="text" id="name" name="name" required placeholder="Ingrese su nombre">
-                    <br>
-                    <label for="email">Correo electrónico:</label>
-                    <input type="email" id="email" name="email" required placeholder="Ingrese su correo electrónico">
-                    <br>
-                    <label for="message">Telefono:</label>
-                    <input type="text" id="telefono" name="telefono" required placeholder="Ingrese su telefono">
-                    <br>
-                    <button type="submit">Registrarse</button>
-                </form>
-            </div>
-        </section>
+                <h3>Enterate de nuestras promociones</h3>
+                    <form class="form-promos">
+                        <input type="text" name="nombre" placeholder="Nombre" required>
+                        <input type="email" name="email" placeholder="Email" required>
+                        <input type="tel" name="telefono" placeholder="Teléfono" required>
+                        <button type="submit">Registrarse</button>
+                    </form>
+            </section>
     </main>
     <footer class="footer">
         <p>© 2025 Germán Rodríguez</p>
