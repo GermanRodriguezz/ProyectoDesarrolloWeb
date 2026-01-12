@@ -283,32 +283,36 @@ img {
 }
 
 .boton-precio {
-  background-color: var(--color-primario);
-  padding: 0.8rem 1.2rem;
-  border-radius: 8px;
-  color: var(--color-blanco);
-  font-weight: bold;
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
+    background-color: var(--color-primario);
+    padding: 0.8rem 1.2rem;
+    border-radius: 8px;
+    color: var(--color-blanco);
+    font-weight: bold;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
 }
 
 .precio {
-  font-size: 1.1rem;
+    font-size: 1.1rem;
 }
 
 /* =======================
-   MENU GRID
+    MENU GRID
 ======================= */
 
 .menu {
-  padding: 4rem 2rem;
+    width: 100%;
+    padding: 4rem 2rem;
+    display: block;
 }
 
 .menu-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 2rem;
+    max-width: 1200px; /*evita que se estire por demas*/
+    margin: 0 auto; /*centra el grid*/
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
 }
 
 /* =======================
