@@ -55,22 +55,27 @@ h1, h2, h3 {
 }
 
 .page-header {
-    padding: 4rem 1rem;
+    padding: 6rem 1.5rem;
     text-align: center;
     background-color: #f5f5f5;
     margin-bottom: 2rem;
 }
 
 .page-header h2 {
-    font-size: 2.4rem;
+    font-size: 3rem;
     color: var(--color-oscuro);
     font-weight: 700;
+    margin-bottom: 1rem;
+    letter-spacing: 1px;
 }
 
 .page-header p {
     max-width: 600px;
     margin: 0 auto;
     color: var(--color-texto);
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto 1rem;
 }
 
 
@@ -160,18 +165,22 @@ img {
 }
 
 .boton-pedido {
-    background-color: var(--color-primario);
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 8px;
-    cursor: pointer;
+    display: inline-block;
+    margin-top: 2rem;
+    padding: 0.9rem 2.2rem;
+    background-color: #e93333;
+    color: #fff;
+    border-radius: 30px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: all 0.3s ease;
 }
 
-.boton-pedido a {
-    text-decoration: none;
-    color: white;
+.boton-pedido:hover {
+    background-color: #c62828;
+    transform: translateY(-2px);
 }
+
 
 /* =======================
     HISTORIA
@@ -555,13 +564,13 @@ MENU CARD
 
 .destacados h2 {
     font-size: 2rem;
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
     color: #222;
 }
 
 .destacados-grid {
     max-width: 1100px;
-    margin: 2rem auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
@@ -575,6 +584,8 @@ MENU CARD
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     cursor: pointer;
     text-align: center;
+    justify-content: space-between;
+    height: 100%;
 }
 
 .destacado-card:hover {
@@ -713,6 +724,16 @@ MENU CARD
 @media (max-width: 768px) {
     .destacado-card img {
         max-width: 160px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page-header h2 {
+        font-size: 2.2rem;
+    }
+
+    .page-header p {
+        font-size: 1rem;
     }
 }
 
