@@ -131,6 +131,25 @@ h1, h2, h3 {
     transition: widht 0.3s ease;
 }
 
+.nav-bar ul li a{
+    position: relative;
+}
+
+.nav-bar ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #e93333;
+    transition: width 0.3s ease;
+}
+
+.nav-bar ul li a:hover::after{
+    width: 100%;
+}
+
 /* =======================
     BIENVENIDA (GRID)
 ======================= */
@@ -557,7 +576,7 @@ MENU CARD
 ======================= */
 
 .destacados {
-    padding: 2rem 1rem;
+    padding: 5rem 1rem;
     background-color: #f7f7f7;
     text-align: center;
 }
@@ -612,6 +631,41 @@ MENU CARD
     font-size: 0.95rem;
     color: #555;
     line-height: 1.5;
+}
+
+
+/* ===================
+    ANIMACIONES 
+=====================*/
+.menu-card ,
+.destacado-card {
+    transition: all 0.3s ease;
+}
+
+.menu-card:hover,
+.destacado-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.menu-card img,
+.destacado-card img {
+    transition: transform 0.4s ease;
+}
+
+.menu-card:hover img,
+.destacado-card img {
+    transform: scale(1.05);
+}
+
+/*===============
+    ANIMACIONES BOTONES
+================*/
+
+.boton-pedido:hover,
+.btn-secundario:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(233,51,51,0.4);
 }
 
 /* =======================
@@ -737,6 +791,18 @@ MENU CARD
     }
 }
 
+.fade-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeUp 0.8s ease forwards;
+}
+
+@keyframes fadeUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
 
 
